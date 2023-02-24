@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72c2772c8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="logo">Bubu.</h1>
+                <!--img src="images/logo4.jpg" class="logo"-->
+                <ul id="sidemenu">
+                    <li id="first-element"><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                    <h1>Hey! this is <span>Deepika</span> <br>from Dubai </h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.avif" alt="bubulu">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Deepika Urikiti. I'm an undergrad in Computer Science Engineering(Artificial Intelligence And Data Science). I gyrated towards engineering because it aligns with my mathematical interests in problem solving to tap unforeseen innovations. In my free time I enjoy watching movies and series.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Volunteering</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C|Python</li>
+                            <li><span>Web development</span><br>HTML|CSS|Javascript</li>
+                            <li><span>Database</span><br>MySql</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Owasp Student chapter</span><br>Content Writer</li>
+                            <li><span>Media Cell</span><br>Public Speaker</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary school</span><br>Narayana Group of Schools</li>
+                            <li><span>Higher secondary education</span><br>Sri Chaitanya</li>
+                            <li><span>UG</span><br>Vignan's Institute of Information Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div class="service1">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>Built a portfolio website using HTML, CSS, Javascript. The website consists of the following sctions:<ol>
+                        <li>Home</li>
+                        <li>About Me</li>
+                        <li>My Services</li>
+                        <li>My Work</li>
+                        <li>Contact Me</li>
+                    </ol></p>
+                    <a href="#"> <u>Learn more</u> </a>
+                </div>
+                <!--div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>ui/ux design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis saepe molestias odio minima aliquam, praesentium maxime corrupti quidem cumque? Dolorum sed esse similique reiciendis nihil, magnam rem distinctio maxime amet?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>app design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis saepe molestias odio minima aliquam, praesentium maxime corrupti quidem cumque? Dolorum sed esse similique reiciendis nihil, magnam rem distinctio maxime amet?</p>
+                    <a href="#">Learn more</a>
+                </div-->
+            </div>
+        </div>
+    </div>
+    <!--------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/automation.jpg" alt="image1">
+                    <div class="layer">
+                        <h3>Home-Automation</h3>
+                        <p>Using technology for convenience</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3.jpg" alt="image2">
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>A web communications application</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image1.jpg" alt="image3">
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                        <p>ldksjkdnmnvjhgjhf</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>deepikaurikiti03@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Downaload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Deepika</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");        
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbymWanxJ3UDbf46Tn_jzV4cuULHSL_06ABw8Z-PvPwXvNuwD9FvWpVImPccDViP5plt/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
